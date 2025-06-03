@@ -53,11 +53,11 @@ body.fade-in {
 .container {
   width: 100%;
   max-width: 700px;
-  margin: 2.5rem auto 0 auto;
+  margin: 8rem auto 0 auto;    
   padding: 0 1rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-start;      
 }
 
 h1 {
@@ -65,7 +65,7 @@ h1 {
   font-weight: 700;
   color: var(--accent);
   margin: 0 0 1.5rem 0;
-  text-align: center;
+  text-align: left;            
 }
 
 h2 {
@@ -76,12 +76,9 @@ h2 {
   letter-spacing: 1px;
   border-bottom: 2px solid var(--accent);
   width: fit-content;
-  margin-left: 0;      /* zarovná doľava */
-  margin-right: 0;     /* zarovná doľava */
-  text-align: left;    /* zarovná text doľava */
-}
-p {
-    text-align: left;
+  margin-left: 0;     
+  margin-right: 0;     
+  text-align: left;    
 }
 
 .about {
@@ -89,30 +86,31 @@ p {
   margin-bottom: 2.5rem;
   color: var(--text);
   max-width: 100%;
-  text-align: center;
+  text-align: left;             
+  margin-left: 0;
 }
 
 .skills-section {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* zarovná skills doľava */
+  align-items: flex-start; 
 }
+
 .skills-list {
   margin-top: 1.5rem;
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* zarovná jednotlivé skill bloky doľava */
+  align-items: flex-start; 
 }
-
 .skill,
 .reference {
   margin-bottom: 2rem;
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* zarovná obsah skillu doľava */
+  align-items: flex-start; 
 }
 
 .skill-title,
@@ -168,9 +166,10 @@ p {
   display: flex;
   gap: 1.2rem;
   align-items: center;
-  justify-content: flex-start; /* zarovná ikony doľava */
+  justify-content: flex-start; 
   width: 100%;
 }
+
 .contact-links a {
   color: #fff;
   text-decoration: none;
