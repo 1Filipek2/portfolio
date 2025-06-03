@@ -102,10 +102,22 @@ footer {
 
 #black-overlay {
   position: fixed;
-  z-index: 9999;
   inset: 0;
+  width: 100vw;
+  height: 100vh;
   background: #000;
+  z-index: 9999;
   opacity: 1;
   pointer-events: none;
   transition: opacity 2s;
+}
+body.fade-in #black-overlay {
+  opacity: 0;
+  transition: opacity 2s;
+}
+body {
+  overflow-y: hidden; /* Skryj scroll počas overlayu */
+}
+body.fade-in {
+  overflow-y: auto; /* Povoliť scroll po fade-in */
 }
