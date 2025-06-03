@@ -53,3 +53,4 @@ function setLang(lang) {
 
 document.getElementById('en-btn').onclick = () => setLang('en');
 document.getElementById('sk-btn').onclick = () => setLang('sk');
+
