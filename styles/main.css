@@ -1,0 +1,101 @@
+:root {
+  --bg: #181a1b;
+  --bg-alt: #232526;
+  --text: #f5f6fa;
+  --accent: #4f8cff;
+  --accent-hover: #82aaff;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  background: var(--bg-alt);
+  padding: 2rem 0 1rem 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: var(--accent);
+  text-decoration: none;
+  margin: 0 1.2rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--accent-hover);
+  transition: width 0.2s;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+}
+
+nav a:hover {
+  color: var(--accent-hover);
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+main {
+  max-width: 700px;
+  margin: 2.5rem auto;
+  padding: 2rem;
+  background: var(--bg-alt);
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+h2 {
+  margin-top: 0;
+  color: var(--accent);
+  font-size: 1.5rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+a {
+  color: var(--accent);
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  color: #888;
+  font-size: 1rem;
+  background: var(--bg-alt);
+  border-top: 1px solid #222;
+  margin-top: 2rem;
+}
