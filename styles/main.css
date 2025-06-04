@@ -137,8 +137,8 @@ h2 {
   padding-bottom: 0.3rem;
   transition: color 0.2s;
   user-select: none;
-  width: 60%;
-  min-width: 160px;
+  width: 40%;
+  min-width: 170px;
   margin-bottom: 0.5rem;
 }
 
@@ -180,7 +180,7 @@ h2 {
   display: flex;
   gap: 1.2rem;
   align-items: center;
-  justify-content: flex-start; 
+  justify-content: center; 
   width: 100%;
 }
 
@@ -200,13 +200,14 @@ h2 {
 .contact-links .icon {
   width: 28px;
   height: 28px;
-  filter: invert(1) brightness(1) grayscale(1);
+  filter: none;
   transition: filter 0.2s;
   margin-right: 0.2rem;
+  color: #747882; 
 }
 
 .contact-links a:hover .icon {
-  filter: invert(0.7) brightness(1.2);
+  filter: invert(0.7) brightness(1.5);
 }
 
 .lang-switch {
@@ -244,4 +245,5 @@ footer {
   text-align: center;
   padding-bottom: 1.5rem;
   letter-spacing: 0.5px;
+  width: 100%;
 }
