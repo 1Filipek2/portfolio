@@ -26,6 +26,7 @@ body {
   overflow-x: hidden;
   position: relative;
 }
+
 body::before {
   content: "";
   position: fixed;
@@ -60,6 +61,7 @@ body.fade-in #black-overlay {
 body {
   overflow-y: hidden;
 }
+
 body.fade-in {
   overflow-y: auto;
 }
@@ -67,11 +69,11 @@ body.fade-in {
 .container {
   width: 100%;
   max-width: 700px;
-  margin: 8rem auto 0 auto;    
+  margin: 8rem auto 0 auto;
   padding: 0 1rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;      
+  align-items: flex-start;
 }
 
 h1 {
@@ -79,7 +81,7 @@ h1 {
   font-weight: 700;
   color: var(--accent);
   margin: 0 0 1.5rem 0;
-  text-align: left;            
+  text-align: left;
 }
 
 h2 {
@@ -90,9 +92,9 @@ h2 {
   letter-spacing: 1px;
   border-bottom: 2px solid var(--accent);
   width: fit-content;
-  margin-left: 0;     
-  margin-right: 0;     
-  text-align: left;    
+  margin-left: 0;
+  margin-right: 0;
+  text-align: left;
 }
 
 .about {
@@ -100,7 +102,7 @@ h2 {
   margin-bottom: 2.5rem;
   color: var(--text);
   max-width: 100%;
-  text-align: left;             
+  text-align: left;
   margin-left: 0;
 }
 
@@ -108,7 +110,7 @@ h2 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; 
+  align-items: flex-start;
 }
 
 .skills-list {
@@ -116,15 +118,16 @@ h2 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; 
+  align-items: flex-start;
 }
+
 .skill,
 .reference {
   margin-bottom: 2rem;
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; 
+  align-items: flex-start;
 }
 
 .skill-title,
@@ -180,7 +183,7 @@ h2 {
   display: flex;
   gap: 1.2rem;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   width: 100%;
 }
 
@@ -203,7 +206,7 @@ h2 {
   filter: none;
   transition: filter 0.2s;
   margin-right: 0.2rem;
-  color: #747882; 
+  color: #747882;
 }
 
 .contact-links a:hover .icon {

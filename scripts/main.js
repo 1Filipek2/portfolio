@@ -2,13 +2,14 @@ window.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     document.body.classList.add('fade-in');
   }, 400);
+
   setTimeout(() => {
     const overlay = document.getElementById('black-overlay');
     if (overlay) overlay.style.display = 'none';
   }, 2400);
 });
 
-window.toggleSkill = function(el) {
+window.toggleSkill = function (el) {
   el.classList.toggle('open');
   const desc = el.nextElementSibling;
   if (desc.classList.contains('show')) {
@@ -43,14 +44,18 @@ const translations = {
 
 function setLang(lang) {
   document.querySelector('.about p').textContent = translations[lang].about;
+
   const skillDescs = document.querySelectorAll('.skill-desc');
   const skillTitles = document.querySelectorAll('.skill-title');
   const keys = ['web', 'low', 'linux', 'net', 'game'];
-  skillDescs.forEach((desc, i) => desc.textContent = translations[lang][keys[i]]);
+
+  skillDescs.forEach((desc, i) => {
+    desc.textContent = translations[lang][keys[i]];
+  });
+
   document.getElementById('en-btn').classList.toggle('active', lang === 'en');
   document.getElementById('sk-btn').classList.toggle('active', lang === 'sk');
 }
 
 document.getElementById('en-btn').onclick = () => setLang('en');
 document.getElementById('sk-btn').onclick = () => setLang('sk');
-
