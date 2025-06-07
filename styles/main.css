@@ -116,7 +116,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: var(--accent);
   margin-bottom: 1.2rem;
   font-weight: bold;
@@ -152,8 +152,7 @@ h2 {
   align-items: flex-start;
 }
 
-.skill,
-.reference {
+.skill {
   margin-bottom: 2rem;
   width: 100%;
   display: flex;
@@ -161,8 +160,7 @@ h2 {
   align-items: flex-start;
 }
 
-.skill-title,
-.reference-title {
+.skill-title {
   font-size: 1.15rem;
   font-weight: bold;
   color: var(--accent-light);
@@ -176,13 +174,11 @@ h2 {
   margin-bottom: 0.5rem;
 }
 
-.skill-title.open,
-.reference-title.open {
+.skill-title.open {
   color: var(--accent);
 }
 
-.skill-desc,
-.reference-desc {
+.skill-desc {
   font-size: 1rem;
   color: #bdbdbd;
   margin-top: 0.5rem;
@@ -195,18 +191,38 @@ h2 {
   pointer-events: none;
 }
 
-.skill-desc.show,
-.reference-desc.show {
+.skill-desc.show {
   max-height: 500px;
   opacity: 1;
   pointer-events: auto;
 }
 
-.skill-desc.hide,
-.reference-desc.hide {
+.skill-desc.hide {
   max-height: 0;
   opacity: 0;
   pointer-events: none;
+}
+
+.references-title {
+  font-size: 1.4rem;
+  color: var(--accent);
+  margin-top: 2.5rem;
+  margin-bottom: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-bottom: 2px solid var(--accent);
+  width: fit-content;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: left;
+}
+
+.references-coming-soon {
+  color: #888;
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-bottom: 24px;
+  text-align: left;
 }
 
 .contact-links {
@@ -280,4 +296,26 @@ footer {
   padding-bottom: 1.5rem;
   letter-spacing: 0.5px;
   width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    margin-top: 3.5rem;
+    padding: 0 0.5rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2, .references-title {
+    font-size: 1.2rem;
+  }
+  .skill-title {
+    font-size: 1rem;
+    min-width: 120px;
+  }
+  .contact-links .icon {
+    width: 22px;
+    height: 22px;
+  }
 }
